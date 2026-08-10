@@ -1,0 +1,296 @@
+===== 1. MOI TRUONG =====
+Mon Aug 10 14:58:03 UTC 2026
+openjdk version "17.0.19" 2026-04-21
+OpenJDK Runtime Environment Temurin-17.0.19+10 (build 17.0.19+10)
+OpenJDK 64-Bit Server VM Temurin-17.0.19+10 (build 17.0.19+10, mixed mode, sharing)
+ANDROID_HOME=/usr/local/lib/android/sdk
+ANDROID_SDK_ROOT=/usr/local/lib/android/sdk
+SDK=/usr/local/lib/android/sdk
+--- platforms co san ---
+android-34
+android-34-ext10
+android-34-ext11
+android-34-ext12
+android-34-ext8
+android-35
+android-35-ext14
+android-35-ext15
+android-36
+android-36-ext18
+android-36-ext19
+android-36.1
+android-37.0
+android-37.1
+--- build-tools co san ---
+34.0.0
+35.0.0
+35.0.1
+36.0.0
+36.1.0
+37.0.0
+--- cmdline-tools ---
+latest
+===== 2. CAI THEM SDK NEU THIEU =====
+sdkmanager: /usr/local/lib/android/sdk/cmdline-tools/latest/bin/sdkmanager
+Da co android-36 hoac khong can cai.
+android-34
+android-34-ext10
+android-34-ext11
+android-34-ext12
+android-34-ext8
+android-35
+android-35-ext14
+android-35-ext15
+android-36
+android-36-ext18
+android-36-ext19
+android-36.1
+android-37.0
+android-37.1
+===== 3. GIAI NEN MA NGUON =====
+total 228
+drwxr-xr-x 4 runner runner   4096 Aug 10 14:58 .
+drwxr-xr-x 3 runner runner   4096 Aug 10 14:58 ..
+drwxr-xr-x 7 runner runner   4096 Aug 10 14:58 .git
+drwxr-xr-x 3 runner runner   4096 Aug 10 14:58 .github
+-rw-r--r-- 1 runner runner 211202 Aug 10 14:58 LichViaPhat.zip
+-rw-r--r-- 1 runner runner   1077 Aug 10 14:58 nhat-ky.txt
+File nen: LichViaPhat.zip
+unzip xong, ma tra ve 0
+Thu muc du an: nguon/LichViaPhat
+total 68
+dr-xr-xr-x 5 runner runner 4096 Aug 10 14:09 .
+drwxr-xr-x 3 runner runner 4096 Aug 10 14:58 ..
+dr-xr-xr-x 3 runner runner 4096 Aug 10 14:09 .github
+-rw-rw-rw- 1 runner runner   94 Aug 10 06:54 .gitignore
+-rw-rw-rw- 1 runner runner 9258 Aug 10 06:54 HUONG-DAN.md
+dr-xr-xr-x 3 runner runner 4096 Aug 10 14:09 app
+-rw-rw-rw- 1 runner runner   74 Aug 10 06:54 build.gradle
+dr-xr-xr-x 3 runner runner 4096 Aug 10 14:09 gradle
+-rw-rw-rw- 1 runner runner  215 Aug 10 06:54 gradle.properties
+-rw-rw-rw- 1 runner runner 8733 Aug 10 06:54 gradlew
+-rwxrwxrwx 1 runner runner 2937 Aug 10 06:54 gradlew.bat
+-rw-rw-rw- 1 runner runner  328 Aug 10 06:54 settings.gradle
+-rw-rw-rw- 1 runner runner 2748 Aug 10 06:54 tinhthat.jks
+===== 4. BIEN DICH =====
+Downloading https://services.gradle.org/distributions/gradle-8.14.3-bin.zip
+.............10%.............20%.............30%.............40%.............50%.............60%.............70%.............80%.............90%..............100%
+
+Welcome to Gradle 8.14.3!
+
+Here are the highlights of this release:
+ - Java 24 support
+ - GraalVM Native Image toolchain selection
+ - Enhancements to test reporting
+ - Build Authoring improvements
+
+For more details see https://docs.gradle.org/8.14.3/release-notes.html
+
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Gradle could not start your build.
+> Could not create service of type BuildLifecycleController using ServicesProvider.createBuildLifecycleController().
+   > Could not create service of type BuildModelController using VintageBuildControllerProvider.createBuildModelController().
+      > Could not create service of type CrossBuildFileHashCache using BuildSessionServices.createCrossBuildFileHashCache().
+         > Could not open file hash cache (/home/runner/work/Lich-via-phat/Lich-via-phat/nguon/LichViaPhat/.gradle/8.14.3/fileHashes).
+            > Cannot create directory '/home/runner/work/Lich-via-phat/Lich-via-phat/nguon/LichViaPhat/.gradle/8.14.3/fileHashes'.
+
+* Try:
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+* Exception is:
+org.gradle.initialization.exception.InitializationException: Gradle could not start your build.
+	at org.gradle.initialization.exception.DefaultExceptionAnalyser.collectFailures(DefaultExceptionAnalyser.java:61)
+	at org.gradle.initialization.exception.MultipleBuildFailuresExceptionAnalyser.transform(MultipleBuildFailuresExceptionAnalyser.java:56)
+	at org.gradle.initialization.exception.MultipleBuildFailuresExceptionAnalyser.transform(MultipleBuildFailuresExceptionAnalyser.java:39)
+	at org.gradle.initialization.exception.StackTraceSanitizingExceptionAnalyser.transform(StackTraceSanitizingExceptionAnalyser.java:34)
+	at org.gradle.internal.buildprocess.execution.SessionFailureReportingActionExecutor.execute(SessionFailureReportingActionExecutor.java:60)
+	at org.gradle.internal.buildprocess.execution.SessionFailureReportingActionExecutor.execute(SessionFailureReportingActionExecutor.java:39)
+	at org.gradle.internal.buildprocess.execution.SetupLoggingActionExecutor.execute(SetupLoggingActionExecutor.java:47)
+	at org.gradle.internal.buildprocess.execution.SetupLoggingActionExecutor.execute(SetupLoggingActionExecutor.java:31)
+	at org.gradle.launcher.daemon.server.exec.ExecuteBuild.doBuild(ExecuteBuild.java:70)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:37)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
+	at org.gradle.launcher.daemon.server.exec.WatchForDisconnection.execute(WatchForDisconnection.java:39)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
+	at org.gradle.launcher.daemon.server.exec.ResetDeprecationLogger.execute(ResetDeprecationLogger.java:29)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
+	at org.gradle.launcher.daemon.server.exec.RequestStopIfSingleUsedDaemon.execute(RequestStopIfSingleUsedDaemon.java:35)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput.lambda$execute$0(ForwardClientInput.java:40)
+	at org.gradle.internal.daemon.clientinput.ClientInputForwarder.forwardInput(ClientInputForwarder.java:80)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput.execute(ForwardClientInput.java:37)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
+	at org.gradle.launcher.daemon.server.exec.LogAndCheckHealth.execute(LogAndCheckHealth.java:53)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
+	at org.gradle.launcher.daemon.server.exec.LogToClient.doBuild(LogToClient.java:63)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:37)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
+	at org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment.doBuild(EstablishBuildEnvironment.java:84)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:37)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
+	at org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy$1.run(StartBuildOrRespondWithBusy.java:52)
+	at org.gradle.launcher.daemon.server.DaemonStateCoordinator.lambda$runCommand$0(DaemonStateCoordinator.java:321)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:48)
+Caused by: org.gradle.internal.service.ServiceCreationException: Could not create service of type BuildLifecycleController using ServicesProvider.createBuildLifecycleController().
+	at org.gradle.internal.service.DefaultServiceRegistry$FactoryMethodService.invokeMethod(DefaultServiceRegistry.java:1059)
+	at org.gradle.internal.service.DefaultServiceRegistry$FactoryService.createServiceInstance(DefaultServiceRegistry.java:959)
+	at org.gradle.internal.service.DefaultServiceRegistry$FactoryMethodService.createServiceInstance(DefaultServiceRegistry.java:1077)
+	at org.gradle.internal.service.DefaultServiceRegistry$ManagedObjectServiceProvider.getInstance(DefaultServiceRegistry.java:686)
+	at org.gradle.internal.service.DefaultServiceRegistry$SingletonService.get(DefaultServiceRegistry.java:771)
+	at org.gradle.internal.service.DefaultServiceRegistry.find(DefaultServiceRegistry.java:356)
+	at org.gradle.internal.service.DefaultServiceRegistry.get(DefaultServiceRegistry.java:340)
+	at org.gradle.internal.service.DefaultServiceRegistry.get(DefaultServiceRegistry.java:335)
+	at org.gradle.internal.build.AbstractBuildState.lambda$new$0(AbstractBuildState.java:49)
+	at org.gradle.internal.lazy.LockingLazy.get(LockingLazy.java:61)
+	at org.gradle.internal.build.AbstractBuildState.getBuildController(AbstractBuildState.java:124)
+	at org.gradle.composite.internal.DefaultRootBuildState.<init>(DefaultRootBuildState.java:69)
+	at org.gradle.composite.internal.BuildStateFactory.createRootBuild(BuildStateFactory.java:68)
+	at org.gradle.composite.internal.DefaultIncludedBuildRegistry.createRootBuild(DefaultIncludedBuildRegistry.java:88)
+	at org.gradle.launcher.exec.RootBuildLifecycleBuildActionExecutor.execute(RootBuildLifecycleBuildActionExecutor.java:53)
+	at org.gradle.internal.buildtree.InitDeprecationLoggingActionExecutor.execute(InitDeprecationLoggingActionExecutor.java:62)
+	at org.gradle.internal.buildtree.InitProblems.execute(InitProblems.java:36)
+	at org.gradle.internal.buildtree.DefaultBuildTreeContext.execute(DefaultBuildTreeContext.java:40)
+	at org.gradle.launcher.exec.BuildTreeLifecycleBuildActionExecutor.lambda$execute$0(BuildTreeLifecycleBuildActionExecutor.java:71)
+	at org.gradle.internal.buildtree.BuildTreeState.run(BuildTreeState.java:60)
+	at org.gradle.launcher.exec.BuildTreeLifecycleBuildActionExecutor.execute(BuildTreeLifecycleBuildActionExecutor.java:71)
+	at org.gradle.launcher.exec.RunAsBuildOperationBuildActionExecutor$2.call(RunAsBuildOperationBuildActionExecutor.java:67)
+	at org.gradle.launcher.exec.RunAsBuildOperationBuildActionExecutor$2.call(RunAsBuildOperationBuildActionExecutor.java:63)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:210)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:205)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:60)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:167)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:54)
+	at org.gradle.launcher.exec.RunAsBuildOperationBuildActionExecutor.execute(RunAsBuildOperationBuildActionExecutor.java:63)
+	at org.gradle.launcher.exec.RunAsWorkerThreadBuildActionExecutor.lambda$execute$0(RunAsWorkerThreadBuildActionExecutor.java:36)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:263)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:127)
+	at org.gradle.launcher.exec.RunAsWorkerThreadBuildActionExecutor.execute(RunAsWorkerThreadBuildActionExecutor.java:36)
+	at org.gradle.tooling.internal.provider.continuous.ContinuousBuildActionExecutor.execute(ContinuousBuildActionExecutor.java:110)
+	at org.gradle.tooling.internal.provider.SubscribableBuildActionExecutor.execute(SubscribableBuildActionExecutor.java:64)
+	at org.gradle.internal.session.DefaultBuildSessionContext.execute(DefaultBuildSessionContext.java:46)
+	at org.gradle.internal.buildprocess.execution.BuildSessionLifecycleBuildActionExecutor$ActionImpl.apply(BuildSessionLifecycleBuildActionExecutor.java:92)
+	at org.gradle.internal.buildprocess.execution.BuildSessionLifecycleBuildActionExecutor$ActionImpl.apply(BuildSessionLifecycleBuildActionExecutor.java:80)
+	at org.gradle.internal.session.BuildSessionState.run(BuildSessionState.java:73)
+	at org.gradle.internal.buildprocess.execution.BuildSessionLifecycleBuildActionExecutor.execute(BuildSessionLifecycleBuildActionExecutor.java:62)
+	at org.gradle.internal.buildprocess.execution.BuildSessionLifecycleBuildActionExecutor.execute(BuildSessionLifecycleBuildActionExecutor.java:41)
+	at org.gradle.internal.buildprocess.execution.StartParamsValidatingActionExecutor.execute(StartParamsValidatingActionExecutor.java:64)
+	at org.gradle.internal.buildprocess.execution.StartParamsValidatingActionExecutor.execute(StartParamsValidatingActionExecutor.java:32)
+	at org.gradle.internal.buildprocess.execution.SessionFailureReportingActionExecutor.execute(SessionFailureReportingActionExecutor.java:51)
+	... 28 more
+Caused by: org.gradle.internal.service.ServiceCreationException: Could not create service of type BuildModelController using VintageBuildControllerProvider.createBuildModelController().
+	at org.gradle.internal.service.DefaultServiceRegistry$FactoryMethodService.invokeMethod(DefaultServiceRegistry.java:1059)
+	at org.gradle.internal.service.DefaultServiceRegistry$FactoryService.createServiceInstance(DefaultServiceRegistry.java:959)
+	at org.gradle.internal.service.DefaultServiceRegistry$FactoryMethodService.createServiceInstance(DefaultServiceRegistry.java:1077)
+	at org.gradle.internal.service.DefaultServiceRegistry$ManagedObjectServiceProvider.getInstance(DefaultServiceRegistry.java:686)
+	at org.gradle.internal.service.DefaultServiceRegistry$SingletonService.get(DefaultServiceRegistry.java:771)
+	at org.gradle.internal.service.DefaultServiceRegistry.find(DefaultServiceRegistry.java:356)
+	at org.gradle.internal.service.DefaultServiceRegistry.get(DefaultServiceRegistry.java:340)
+	at org.gradle.internal.service.DefaultServiceRegistry.get(DefaultServiceRegistry.java:335)
+	at org.gradle.internal.build.DefaultBuildLifecycleControllerFactory.newInstance(DefaultBuildLifecycleControllerFactory.java:65)
+	at org.gradle.internal.cc.impl.DefaultBuildModelControllerServices$ServicesProvider.createBuildLifecycleController(DefaultBuildModelControllerServices.kt:119)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:125)
+	at org.gradle.internal.service.ReflectionBasedServiceMethod.invoke(ReflectionBasedServiceMethod.java:35)
+	at org.gradle.internal.service.DefaultServiceRegistry$FactoryMethodService.invokeMethod(DefaultServiceRegistry.java:1057)
+	... 73 more
+Caused by: org.gradle.internal.service.ServiceCreationException: Could not create service of type CrossBuildFileHashCache using BuildSessionServices.createCrossBuildFileHashCache().
+	at org.gradle.internal.service.DefaultServiceRegistry$FactoryMethodService.invokeMethod(DefaultServiceRegistry.java:1059)
+	at org.gradle.internal.service.DefaultServiceRegistry$FactoryService.createServiceInstance(DefaultServiceRegistry.java:959)
+	at org.gradle.internal.service.DefaultServiceRegistry$FactoryMethodService.createServiceInstance(DefaultServiceRegistry.java:1077)
+	at org.gradle.internal.service.DefaultServiceRegistry$ManagedObjectServiceProvider.getInstance(DefaultServiceRegistry.java:686)
+	at org.gradle.internal.service.DefaultServiceRegistry$SingletonService.get(DefaultServiceRegistry.java:771)
+	at org.gradle.internal.service.DefaultServiceRegistry$FactoryService.assembleParameters(DefaultServiceRegistry.java:972)
+	at org.gradle.internal.service.DefaultServiceRegistry$FactoryService.createServiceInstance(DefaultServiceRegistry.java:958)
+	at org.gradle.internal.service.DefaultServiceRegistry$FactoryMethodService.createServiceInstance(DefaultServiceRegistry.java:1077)
+	at org.gradle.internal.service.DefaultServiceRegistry$ManagedObjectServiceProvider.getInstance(DefaultServiceRegistry.java:686)
+	at org.gradle.internal.service.DefaultServiceRegistry$SingletonService.get(DefaultServiceRegistry.java:771)
+	at org.gradle.internal.service.DefaultServiceRegistry$FactoryService.assembleParameters(DefaultServiceRegistry.java:972)
+	at org.gradle.internal.service.DefaultServiceRegistry$FactoryService.createServiceInstance(DefaultServiceRegistry.java:958)
+	at org.gradle.internal.service.DefaultServiceRegistry$FactoryMethodService.createServiceInstance(DefaultServiceRegistry.java:1077)
+	at org.gradle.internal.service.DefaultServiceRegistry$ManagedObjectServiceProvider.getInstance(DefaultServiceRegistry.java:686)
+	at org.gradle.internal.service.DefaultServiceRegistry$SingletonService.get(DefaultServiceRegistry.java:771)
+	at org.gradle.internal.service.DefaultServiceRegistry$FactoryService.assembleParameters(DefaultServiceRegistry.java:972)
+	at org.gradle.internal.service.DefaultServiceRegistry$FactoryService.createServiceInstance(DefaultServiceRegistry.java:958)
+	at org.gradle.internal.service.DefaultServiceRegistry$FactoryMethodService.createServiceInstance(DefaultServiceRegistry.java:1077)
+	at org.gradle.internal.service.DefaultServiceRegistry$ManagedObjectServiceProvider.getInstance(DefaultServiceRegistry.java:686)
+	at org.gradle.internal.service.DefaultServiceRegistry$SingletonService.get(DefaultServiceRegistry.java:771)
+	at org.gradle.internal.service.DefaultServiceRegistry$FactoryService.assembleParameters(DefaultServiceRegistry.java:972)
+	at org.gradle.internal.service.DefaultServiceRegistry$FactoryService.createServiceInstance(DefaultServiceRegistry.java:958)
+	at org.gradle.internal.service.DefaultServiceRegistry$FactoryMethodService.createServiceInstance(DefaultServiceRegistry.java:1077)
+	at org.gradle.internal.service.DefaultServiceRegistry$ManagedObjectServiceProvider.getInstance(DefaultServiceRegistry.java:686)
+	at org.gradle.internal.service.DefaultServiceRegistry$SingletonService.get(DefaultServiceRegistry.java:771)
+	at org.gradle.internal.service.DefaultServiceRegistry$FactoryService.assembleParameters(DefaultServiceRegistry.java:972)
+	at org.gradle.internal.service.DefaultServiceRegistry$FactoryService.createServiceInstance(DefaultServiceRegistry.java:958)
+	at org.gradle.internal.service.DefaultServiceRegistry$FactoryMethodService.createServiceInstance(DefaultServiceRegistry.java:1077)
+	at org.gradle.internal.service.DefaultServiceRegistry$ManagedObjectServiceProvider.getInstance(DefaultServiceRegistry.java:686)
+	at org.gradle.internal.service.DefaultServiceRegistry$SingletonService.get(DefaultServiceRegistry.java:771)
+	at org.gradle.internal.service.DefaultServiceRegistry$FactoryService.assembleParameters(DefaultServiceRegistry.java:972)
+	at org.gradle.internal.service.DefaultServiceRegistry$FactoryService.createServiceInstance(DefaultServiceRegistry.java:958)
+	at org.gradle.internal.service.DefaultServiceRegistry$FactoryMethodService.createServiceInstance(DefaultServiceRegistry.java:1077)
+	at org.gradle.internal.service.DefaultServiceRegistry$ManagedObjectServiceProvider.getInstance(DefaultServiceRegistry.java:686)
+	at org.gradle.internal.service.DefaultServiceRegistry$SingletonService.get(DefaultServiceRegistry.java:771)
+	at org.gradle.internal.service.DefaultServiceRegistry$FactoryService.assembleParameters(DefaultServiceRegistry.java:972)
+	at org.gradle.internal.service.DefaultServiceRegistry$FactoryService.createServiceInstance(DefaultServiceRegistry.java:958)
+	at org.gradle.internal.service.DefaultServiceRegistry$FactoryMethodService.createServiceInstance(DefaultServiceRegistry.java:1077)
+	at org.gradle.internal.service.DefaultServiceRegistry$ManagedObjectServiceProvider.getInstance(DefaultServiceRegistry.java:686)
+	at org.gradle.internal.service.DefaultServiceRegistry$SingletonService.get(DefaultServiceRegistry.java:771)
+	at org.gradle.internal.service.DefaultServiceRegistry$FactoryService.assembleParameters(DefaultServiceRegistry.java:972)
+	at org.gradle.internal.service.DefaultServiceRegistry$FactoryService.createServiceInstance(DefaultServiceRegistry.java:958)
+	at org.gradle.internal.service.DefaultServiceRegistry$ConstructorService.createServiceInstance(DefaultServiceRegistry.java:1140)
+	at org.gradle.internal.service.DefaultServiceRegistry$ManagedObjectServiceProvider.getInstance(DefaultServiceRegistry.java:686)
+	at org.gradle.internal.service.DefaultServiceRegistry$SingletonService.get(DefaultServiceRegistry.java:771)
+	at org.gradle.internal.service.DefaultServiceRegistry$FactoryService.assembleParameters(DefaultServiceRegistry.java:972)
+	at org.gradle.internal.service.DefaultServiceRegistry$FactoryService.createServiceInstance(DefaultServiceRegistry.java:958)
+	at org.gradle.internal.service.DefaultServiceRegistry$FactoryMethodService.createServiceInstance(DefaultServiceRegistry.java:1077)
+	at org.gradle.internal.service.DefaultServiceRegistry$ManagedObjectServiceProvider.getInstance(DefaultServiceRegistry.java:686)
+	at org.gradle.internal.service.DefaultServiceRegistry$SingletonService.get(DefaultServiceRegistry.java:771)
+	at org.gradle.internal.service.DefaultServiceRegistry.find(DefaultServiceRegistry.java:356)
+	at org.gradle.internal.service.DefaultServiceRegistry.get(DefaultServiceRegistry.java:340)
+	at org.gradle.internal.service.DefaultServiceRegistry.get(DefaultServiceRegistry.java:335)
+	at org.gradle.internal.cc.impl.DefaultBuildModelControllerServices$VintageBuildControllerProvider.createBuildModelController(DefaultBuildModelControllerServices.kt:252)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:125)
+	at org.gradle.internal.service.ReflectionBasedServiceMethod.invoke(ReflectionBasedServiceMethod.java:35)
+	at org.gradle.internal.service.DefaultServiceRegistry$FactoryMethodService.invokeMethod(DefaultServiceRegistry.java:1057)
+	... 88 more
+Caused by: org.gradle.cache.CacheOpenException: Could not open file hash cache (/home/runner/work/Lich-via-phat/Lich-via-phat/nguon/LichViaPhat/.gradle/8.14.3/fileHashes).
+	at org.gradle.cache.internal.DefaultPersistentDirectoryStore.open(DefaultPersistentDirectoryStore.java:77)
+	at org.gradle.cache.internal.DefaultPersistentDirectoryStore.open(DefaultPersistentDirectoryStore.java:36)
+	at org.gradle.cache.internal.DefaultCacheFactory.doOpen(DefaultCacheFactory.java:102)
+	at org.gradle.cache.internal.DefaultCacheFactory.open(DefaultCacheFactory.java:63)
+	at org.gradle.cache.internal.DefaultCacheBuilder.open(DefaultCacheBuilder.java:79)
+	at org.gradle.api.internal.changedetection.state.CrossBuildFileHashCache.<init>(CrossBuildFileHashCache.java:41)
+	at org.gradle.internal.service.scopes.VirtualFileSystemServices$BuildSessionServices.createCrossBuildFileHashCache(VirtualFileSystemServices.java:326)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:125)
+	at org.gradle.internal.service.ReflectionBasedServiceMethod.invoke(ReflectionBasedServiceMethod.java:35)
+	at org.gradle.internal.service.DefaultServiceRegistry$FactoryMethodService.invokeMethod(DefaultServiceRegistry.java:1057)
+	... 147 more
+Caused by: java.io.IOException: Cannot create directory '/home/runner/work/Lich-via-phat/Lich-via-phat/nguon/LichViaPhat/.gradle/8.14.3/fileHashes'.
+	at org.apache.commons.io.FileUtils.mkdirs(FileUtils.java:2289)
+	at org.apache.commons.io.FileUtils.forceMkdir(FileUtils.java:1376)
+	at org.gradle.cache.internal.DefaultPersistentDirectoryStore.open(DefaultPersistentDirectoryStore.java:73)
+	... 159 more
+
+
+BUILD FAILED in 6s
+===== KET QUA GRADLE: 1 =====
+===== 5. TIM FILE APK =====
+APK: KHONG CO
+===== THAT BAI: khong tao duoc APK =====
