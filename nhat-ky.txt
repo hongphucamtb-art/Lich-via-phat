@@ -925,3 +925,69 @@ drwxr-xr-x 2 runner runner     4096 Sep 28 21:19 .
 drwxr-xr-x 6 runner runner     4096 Sep 28 21:19 ..
 -rw-r--r-- 1 runner runner 10259724 Sep 28 21:19 LichViaPhat.apk
 ===== THANH CONG =====
+===== 1. MOI TRUONG =====
+Tue Sep 29 05:20:23 UTC 2026
+openjdk version "17.0.20.1" 2026-08-18
+OpenJDK Runtime Environment Temurin-17.0.20.1+1 (build 17.0.20.1+1)
+OpenJDK 64-Bit Server VM Temurin-17.0.20.1+1 (build 17.0.20.1+1, mixed mode, sharing)
+ANDROID_HOME=/usr/local/lib/android/sdk
+ANDROID_SDK_ROOT=/usr/local/lib/android/sdk
+SDK=/usr/local/lib/android/sdk
+--- platforms co san ---
+android-34
+android-34-ext10
+android-34-ext11
+android-34-ext12
+android-34-ext8
+android-35
+android-35-ext14
+android-35-ext15
+android-36
+android-36-ext18
+android-36-ext19
+android-36.1
+android-37.0
+android-37.1
+android-37.2
+android-37.2-beta1
+android-37.2-beta2
+android-37.2-beta3
+--- build-tools co san ---
+34.0.0
+35.0.0
+35.0.1
+36.0.0
+36.1.0
+37.0.0
+--- cmdline-tools ---
+latest
+===== 2. CAI THEM SDK NEU THIEU =====
+sdkmanager: /usr/local/lib/android/sdk/cmdline-tools/latest/bin/sdkmanager
+Da co android-36 hoac khong can cai.
+android-34
+android-34-ext10
+android-34-ext11
+android-34-ext12
+android-34-ext8
+android-35
+android-35-ext14
+android-35-ext15
+android-36
+android-36-ext18
+android-36-ext19
+android-36.1
+android-37.0
+android-37.1
+android-37.2
+android-37.2-beta1
+android-37.2-beta2
+android-37.2-beta3
+===== 3. GIAI NEN MA NGUON =====
+total 80
+drwxr-xr-x 4 runner runner  4096 Sep 29 05:20 .
+drwxr-xr-x 3 runner runner  4096 Sep 29 05:20 ..
+drwxr-xr-x 7 runner runner  4096 Sep 29 05:20 .git
+drwxr-xr-x 3 runner runner  4096 Sep 29 05:20 .github
+-rw-r--r-- 1 runner runner 63554 Sep 29 05:20 nhat-ky.txt
+File nen: 
+LOI: khong tim thay file .zip
