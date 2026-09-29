@@ -85,7 +85,7 @@ jobs:
           A=$(find . -name "*release*.apk" -not -path "./.git/*" 2>/dev/null | head -1)
           echo "APK: ${A:-KHONG CO}"
           if [ -n "$A" ]; then
-            cp "$A" out/LichViaPhat.apk
+            cp "$A" out/ChotTinhThuc.apk
             ls -la out
             echo "===== THANH CONG ====="
           else
@@ -107,12 +107,12 @@ jobs:
           fi
 
       - name: Tao ban phat hanh
-        if: hashFiles('out/LichViaPhat.apk') != ''
+        if: hashFiles('out/ChotTinhThuc.apk') != ''
         uses: softprops/action-gh-release@v2
         with:
           tag_name: apk-${{ github.run_number }}
-          name: Lich Via Phat - ban ${{ github.run_number }}
-          body: "Tinh That A Di Da - Chau Doc. Bam vao LichViaPhat.apk ben duoi de tai va cai."
-          files: out/LichViaPhat.apk
+          name: Chot Tinh Thuc - ban ${{ github.run_number }}
+          body: "Chợt Tỉnh Thức. Bấm vào ChotTinhThuc.apk bên dưới để tải và cài."
+          files: out/ChotTinhThuc.apk
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
