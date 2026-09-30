@@ -1333,3 +1333,174 @@ drwxr-xr-x 2 runner runner    4096 Sep 29 13:11 .
 drwxr-xr-x 6 runner runner    4096 Sep 29 13:11 ..
 -rw-r--r-- 1 runner runner 1702128 Sep 29 13:11 ChotTinhThuc.apk
 ===== THANH CONG =====
+===== 1. MOI TRUONG =====
+Wed Sep 30 03:41:00 UTC 2026
+openjdk version "17.0.20.1" 2026-08-18
+OpenJDK Runtime Environment Temurin-17.0.20.1+1 (build 17.0.20.1+1)
+OpenJDK 64-Bit Server VM Temurin-17.0.20.1+1 (build 17.0.20.1+1, mixed mode, sharing)
+ANDROID_HOME=/usr/local/lib/android/sdk
+ANDROID_SDK_ROOT=/usr/local/lib/android/sdk
+SDK=/usr/local/lib/android/sdk
+--- platforms co san ---
+android-34
+android-34-ext10
+android-34-ext11
+android-34-ext12
+android-34-ext8
+android-35
+android-35-ext14
+android-35-ext15
+android-36
+android-36-ext18
+android-36-ext19
+android-36.1
+android-37.0
+android-37.1
+android-37.2
+android-37.2-beta1
+android-37.2-beta2
+android-37.2-beta3
+--- build-tools co san ---
+34.0.0
+35.0.0
+35.0.1
+36.0.0
+36.1.0
+37.0.0
+--- cmdline-tools ---
+latest
+===== 2. CAI THEM SDK NEU THIEU =====
+sdkmanager: /usr/local/lib/android/sdk/cmdline-tools/latest/bin/sdkmanager
+Da co android-36 hoac khong can cai.
+android-34
+android-34-ext10
+android-34-ext11
+android-34-ext12
+android-34-ext8
+android-35
+android-35-ext14
+android-35-ext15
+android-36
+android-36-ext18
+android-36-ext19
+android-36.1
+android-37.0
+android-37.1
+android-37.2
+android-37.2-beta1
+android-37.2-beta2
+android-37.2-beta3
+===== 3. GIAI NEN MA NGUON =====
+total 1800
+drwxr-xr-x 4 runner runner    4096 Sep 30 03:41 .
+drwxr-xr-x 3 runner runner    4096 Sep 30 03:40 ..
+drwxr-xr-x 7 runner runner    4096 Sep 30 03:41 .git
+drwxr-xr-x 3 runner runner    4096 Sep 30 03:41 .github
+-rw-r--r-- 1 runner runner 1742850 Sep 30 03:41 ChotTinhThuc.zip
+-rw-r--r-- 1 runner runner   78352 Sep 30 03:41 nhat-ky.txt
+File nen: ChotTinhThuc.zip
+unzip xong, ma tra ve 0
+Thu muc du an: nguon/ChotTinhThuc
+total 60
+drwxr-xr-x 4 runner runner 4096 Sep 29 00:14 .
+drwxr-xr-x 3 runner runner 4096 Sep 30 03:41 ..
+-rw-r--r-- 1 runner runner   94 Sep 29 00:14 .gitignore
+-rw-r--r-- 1 runner runner 7816 Sep 29 00:14 HUONG-DAN.md
+drwxr-xr-x 3 runner runner 4096 Sep 30 03:15 app
+-rw-r--r-- 1 runner runner   74 Sep 29 00:14 build.gradle
+drwxr-xr-x 3 runner runner 4096 Sep 29 00:14 gradle
+-rw-r--r-- 1 runner runner  215 Sep 29 00:14 gradle.properties
+-rw-r--r-- 1 runner runner 8987 Sep 29 00:14 gradlew
+-rw-r--r-- 1 runner runner 2937 Sep 29 00:14 gradlew.bat
+-rw-r--r-- 1 runner runner  329 Sep 29 00:14 settings.gradle
+-rw-r--r-- 1 runner runner 2748 Sep 29 00:14 tinhthat.jks
+===== 4. BIEN DICH =====
+Downloading https://services.gradle.org/distributions/gradle-8.14.3-bin.zip
+.............10%.............20%.............30%.............40%.............50%.............60%.............70%.............80%.............90%..............100%
+
+Welcome to Gradle 8.14.3!
+
+Here are the highlights of this release:
+ - Java 24 support
+ - GraalVM Native Image toolchain selection
+ - Enhancements to test reporting
+ - Build Authoring improvements
+
+For more details see https://docs.gradle.org/8.14.3/release-notes.html
+
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preTructiepReleaseBuild UP-TO-DATE
+> Task :app:mergeTructiepReleaseJniLibFolders
+> Task :app:mergeTructiepReleaseNativeLibs NO-SOURCE
+> Task :app:stripTructiepReleaseDebugSymbols NO-SOURCE
+> Task :app:extractTructiepReleaseNativeSymbolTables NO-SOURCE
+> Task :app:mergeTructiepReleaseNativeDebugMetadata NO-SOURCE
+> Task :app:checkTructiepReleaseDuplicateClasses
+> Task :app:checkTructiepReleaseAarMetadata
+> Task :app:javaPreCompileTructiepRelease
+> Task :app:processTructiepReleaseNavigationResources
+> Task :app:compileTructiepReleaseNavigationResources
+> Task :app:generateTructiepReleaseResValues
+> Task :app:mapTructiepReleaseSourceSetPaths
+> Task :app:generateTructiepReleaseResources
+> Task :app:packageTructiepReleaseResources
+> Task :app:mergeTructiepReleaseResources
+> Task :app:createTructiepReleaseCompatibleScreenManifests
+> Task :app:extractDeepLinksTructiepRelease
+> Task :app:parseTructiepReleaseLocalResources
+> Task :app:processTructiepReleaseMainManifest
+> Task :app:processTructiepReleaseManifest
+> Task :app:desugarTructiepReleaseFileDependencies
+> Task :app:processTructiepReleaseManifestForPackage
+> Task :app:mergeTructiepReleaseStartupProfile
+> Task :app:mergeTructiepReleaseArtProfile
+> Task :app:mergeTructiepReleaseShaders
+> Task :app:compileTructiepReleaseShaders NO-SOURCE
+> Task :app:generateTructiepReleaseAssets UP-TO-DATE
+> Task :app:mergeExtDexTructiepRelease
+> Task :app:mergeTructiepReleaseAssets
+> Task :app:extractTructiepReleaseVersionControlInfo
+> Task :app:processTructiepReleaseResources
+> Task :app:processTructiepReleaseJavaRes NO-SOURCE
+> Task :app:compressTructiepReleaseAssets
+
+> Task :app:compileTructiepReleaseJavaWithJavac
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :app:dexBuilderTructiepRelease
+> Task :app:mergeTructiepReleaseGlobalSynthetics
+> Task :app:collectTructiepReleaseDependencies
+> Task :app:mergeTructiepReleaseJavaResource
+> Task :app:sdkTructiepReleaseDependencyData
+> Task :app:validateSigningTructiepRelease
+> Task :app:writeTructiepReleaseAppMetadata
+> Task :app:writeTructiepReleaseSigningConfigVersions
+> Task :app:optimizeTructiepReleaseResources
+> Task :app:mergeDexTructiepRelease
+> Task :app:compileTructiepReleaseArtProfile
+> Task :app:packageTructiepRelease
+> Task :app:createTructiepReleaseApkListingFileRedirect
+> Task :app:assembleTructiepRelease
+
+[Incubating] Problems report is available at: file:///home/runner/work/Lich-via-phat/Lich-via-phat/nguon/ChotTinhThuc/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 40s
+40 actionable tasks: 40 executed
+===== KET QUA GRADLE: 0 =====
+===== 5. TIM FILE APK =====
+./nguon/ChotTinhThuc/app/build/outputs/apk/tructiep/release/app-tructiep-release.apk
+APK: ./nguon/ChotTinhThuc/app/build/outputs/apk/tructiep/release/app-tructiep-release.apk
+total 1680
+drwxr-xr-x 2 runner runner    4096 Sep 30 03:41 .
+drwxr-xr-x 6 runner runner    4096 Sep 30 03:41 ..
+-rw-r--r-- 1 runner runner 1710998 Sep 30 03:41 ChotTinhThuc.apk
+===== THANH CONG =====
