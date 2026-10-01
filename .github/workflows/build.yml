@@ -92,6 +92,15 @@ jobs:
             echo "===== THAT BAI: khong tao duoc APK ====="
           fi
 
+          echo "===== 6. BUILD FILE AAB CHO CH PLAY ====="
+          cd "$GITHUB_WORKSPACE/$D"
+          ./gradlew bundleChplayRelease --no-daemon --stacktrace
+          echo "===== KET QUA AAB: $? ====="
+          cd "$GITHUB_WORKSPACE"
+          B=$(find . -name "*.aab" -not -path "./.git/*" 2>/dev/null | head -1)
+          echo "AAB: ${B:-KHONG CO}"
+          if [ -n "$B" ]; then cp "$B" out/ChotTinhThuc-CHPlay.aab; ls -la out; fi
+
       - name: Luu nhat ky vao kho de xem loi
         if: always()
         run: |
@@ -112,7 +121,9 @@ jobs:
         with:
           tag_name: apk-${{ github.run_number }}
           name: Chot Tinh Thuc - ban ${{ github.run_number }}
-          body: "Chợt Tỉnh Thức. Bấm vào ChotTinhThuc.apk bên dưới để tải và cài."
-          files: out/ChotTinhThuc.apk
+          body: "Chợt Tỉnh Thức. Bấm vào ChotTinhThuc.apk bên dưới để tải và cài. File ChotTinhThuc-CHPlay.aab dùng để tải lên Google Play Console."
+          files: |
+            out/ChotTinhThuc.apk
+            out/ChotTinhThuc-CHPlay.aab
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
